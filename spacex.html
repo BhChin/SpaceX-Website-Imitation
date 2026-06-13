@@ -1,0 +1,63 @@
+<!DOCTYPE html> <!-- tells the browser this is an HTML5 document -->
+<html> <!-- root element that wraps everything on the page -->
+
+    <head> <!-- contains behind-the-scenes info (not visible on the page) -->
+        <title>SpaceX Imitation</title> <!-- title of webpage (on tab) -->
+        <link rel="stylesheet" href="style.css"> <!-- links your external CSS file for styling -->
+    </head>
+
+    <body> <!-- everything visible on the webpage goes here -->
+
+        <header class="navbar"> <!-- top section of the page, styled with the "navbar" class -->
+            <div class="logo">SPACEX</div> <!-- a box (div) holding the logo text -->
+
+            <nav> <!-- navigation container for the menu links -->
+                <div class="dropdown">
+                    <a href="#">VEHICLES ▾</a>
+                    <div class="dropdown-menu">
+                        <a href="#">STARSHIP</a>
+                        <a href="#">DRAGON</a>
+                        <a href="#">FALCON 9</a>
+                        <a href="#">FALCON HEAVY</a>
+                    </div>
+                </div>
+                <a href="https://www.spacex.com">HUMAN SPACEFLIGHT</a>
+                <a href="https://github.com">STARLINK</a>
+                <a href="#">COMPANY</a>
+                <a href="#">SHOP</a>
+            </nav>
+        </header>
+
+        <!-- this is the old hero section using a static image — commented out so it won't show -->
+        <!-- <section class="hero">
+            <div class="overlay"></div>
+
+            <div class="hero-text">
+                <p>MAY 22, 2026</p>
+                <h1>STARSHIP'S TWELFTH FLIGHT TEST</h1>
+                <button>WATCH →</button>
+            </div>
+        </section> -->
+
+        <section class="hero"> <!-- hero = the big, eye-catching banner section at the top of the page -->
+
+            <video autoplay muted loop playsinline class="background-video">
+                <!-- autoplay: starts playing immediately -->
+                <!-- muted: no sound (required for autoplay to work in most browsers) -->
+                <!-- loop: restarts the video when it ends -->
+                <!-- playsinline: plays inside the page on mobile instead of going fullscreen -->
+                <source src="videos/rocket.mp4" type="video/mp4"> <!-- the actual video file and its format -->
+            </video>
+
+            <div class="overlay"></div> <!-- a semi-transparent layer on top of the video (for darkening it) -->
+
+            <div class="hero-text"> <!-- container for the text displayed over the video -->
+                <p>MAY 22, 2026</p> <!-- paragraph tag for the date -->
+                <h1>STARSHIP'S TWELFTH FLIGHT TEST</h1> <!-- h1 = the biggest/most important heading on the page -->
+                <a href="https://www.youtube.com/watch?v=Zi2SU98BAD8&t=142s" class="watch-btn" target="_blank">WATCH →</a>
+            </div>
+
+        </section>
+
+    </body>
+</html>
